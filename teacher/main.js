@@ -140,12 +140,15 @@ $(function(){
             {
                 'bg': 'img/page5.png',
                 'animate': [
-                    {'name':'push', 'imgs':['img/juqi.png']}
+                    {'name':'push', 'imgs':['img/juqi.png']},
+                    {'name':'anniu', 'imgs':['img/anniu1.png']}
                 ]
             },
             {
                 'bg': 'img/page6.png',
-                'animate': []
+                'animate': [
+                    {'name':'blink', 'imgs':['img/blink1.png']}
+                ]
             },
             {
                 'bg': 'img/page7.png',
