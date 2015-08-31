@@ -74,9 +74,10 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
     background: #aaaaaa;
     position: relative;
     margin-top: 10px;
+    border: 1px solid #000000;
 }
 #loading_bar span{
-    display: block;position: absolute;top:0;left: 0;width: 0;height:100%;border-radius:10px;background: #434343;
+    display: block;position: absolute;top:0;left: 0;width: 0;height:100%;border-radius:10px;background: #9e7575;
     z-index: 10;
 }
 #loading_process {
@@ -92,15 +93,21 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
 
 }
 .screen {position: absolute; left:0; top:0; width:100%; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-transition: all 800ms ease-in-out;}
-.layout {position: relative;width: 100%;height: 100%;background: url("") no-repeat center;background-size: 100% 100%;-webkit-perspective: 400px}
+.layout {position: relative;width: 100%;height: 100%;background: url("") no-repeat center;background-size: auto 100%;-webkit-perspective: 400px}
+.layout.page7 {position: relative;width: 100%;height: 100%;background: url("") no-repeat center;background-size: cover}
+.layout.page7 .button{position: absolute;left: 50%;-webkit-transform:translate(-50%,0);bottom: 30%;height: 7%;}
 .layout .animate div {position: absolute; left:0; top:0; width:100%; height:100%; background: url("") no-repeat center; background-size: auto 100%; }
-.active .animate.push div {-webkit-animation: page5 800ms 800ms ease forwards;}
+.active .animate.push div {-webkit-animation: push 600ms 800ms ease infinite;}
 .active .animate.slideInLeft div {opacity: 0;-webkit-animation: slideInLeft 800ms 800ms ease forwards;}
 .active .animate.slideInRight div {opacity: 0;-webkit-animation: slideInRight 800ms 1200ms ease forwards;}
 .active .animate.fadeIn div {opacity:0;-webkit-animation: fadeIn 800ms 2000ms ease forwards;}
 .active .animate.seal div {opacity:0;-webkit-animation: seal 800ms 2600ms ease forwards;}
 .animate.seal div {opacity:0;}
-.active .animate.door div {-webkit-animation: door 500ms 800ms linear forwards;}
+.active .animate.photo div {-webkit-animation: photo 1000ms 800ms ease infinite;}
+.active .animate.belt div {-webkit-animation: belt 1500ms 800ms ease infinite;}
+.active .animate.star div {-webkit-animation: star 1000ms 800ms ease infinite;}
+.active .animate.door div {-webkit-animation: door 1000ms 800ms ease forwards;}
+.active .animate.show div {opacity:0;-webkit-animation: show 800ms 800ms ease forwards;}
 .swipeUp {
     position: absolute;
     left: 50%;
@@ -159,6 +166,19 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
         -webkit-transform: translate3d(0,0,-50px)
     }
 }
+@-webkit-keyframes photo {
+    0% {opacity: 1}
+    100% {background-image: url("img/photo1.png")}
+}
+@-webkit-keyframes belt {
+    0% {opacity: 1}
+    50% {background-image: url("img/belt2.png")}
+    100% {background-image: url("img/belt3.png")}
+}
+@-webkit-keyframes star {
+    0% {opacity: 1}
+    100% {background-image: url("img/star2.png")}
+}
 @-webkit-keyframes door {
     0% {
         opacity: 1
@@ -176,7 +196,11 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
         background-image: url("img/door5.png")
     }
 }
-@-webkit-keyframes page5 {
+@-webkit-keyframes push {
     0% {opacity: 1}
     100% {background-image: url("img/fx.png")}
+}
+@-webkit-keyframes show {
+    0% {opacity: 0;background-size: auto 50%;}
+    100% {opacity: 1;background-size: auto 100%;}
 }

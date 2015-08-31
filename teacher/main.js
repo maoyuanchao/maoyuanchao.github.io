@@ -125,7 +125,11 @@ $(function(){
             },
             {
                 'bg': 'img/page3.png',
-                'animate': []
+                'animate': [
+                    {'name':'photo', 'imgs':['img/photo.png']},
+                    {'name':'belt', 'imgs':['img/belt1.png']},
+                    {'name':'star', 'imgs':['img/star1.png']}
+                ]
             },
             {
                 'bg': 'img/page4.png',
@@ -145,7 +149,9 @@ $(function(){
             },
             {
                 'bg': 'img/page7.png',
-                'animate': []
+                'animate': [
+                    {'name':'show', 'imgs':['img/welcome.png']}
+                ]
             }
 
         ],
@@ -177,6 +183,8 @@ $(function(){
                 h+='</div>';
             }
             $('.screen').append(h);
+            var btn = '<a href="https://hr.m.tencent.com/wechatlearning/activity/actdetails.php?ActId=76384"><img class="button" src="img/button.png"></a>';
+            $(".page7").append(btn);
         },
         page: function(){
             var _this = this;
