@@ -97,11 +97,11 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
 .layout.page7 {position: relative;width: 100%;height: 100%;background: url("") no-repeat center;background-size: cover}
 .layout.page7 .button{position: absolute;left: 50%;-webkit-transform:translate(-50%,0);bottom: 30%;height: 7%;}
 .layout .animate div {position: absolute; left:0; top:0; width:100%; height:100%; background: url("") no-repeat center; background-size: auto 100%; }
-.active .animate.push div {-webkit-animation: push 600ms 800ms ease infinite;}
-.active .animate.slideInLeft div {opacity: 0;-webkit-animation: slideInLeft 800ms 800ms ease forwards;}
-.active .animate.slideInRight div {opacity: 0;-webkit-animation: slideInRight 800ms 1200ms ease forwards;}
-.active .animate.fadeIn div {opacity:0;-webkit-animation: fadeIn 800ms 2000ms ease forwards;}
-.active .animate.seal div {opacity:0;-webkit-animation: seal 800ms 2600ms ease forwards;}
+.active .animate.push div {-webkit-animation: push 700ms 800ms ease infinite;}
+.active .animate.slideInLeft div {opacity: 0;-webkit-animation: slideInLeft 1000ms 800ms ease forwards;}
+.active .animate.slideInRight div {opacity: 0;-webkit-animation: slideInRight 1000ms 1500ms ease forwards;}
+.active .animate.fadeIn div {opacity:0;-webkit-animation: fadeIn 800ms 2500ms ease forwards;}
+.active .animate.seal div {opacity:0;-webkit-animation: seal 800ms 3000ms ease forwards;}
 .animate.seal div {opacity:0;}
 .active .animate.photo div {-webkit-animation: photo 1000ms 800ms ease infinite;}
 .active .animate.belt div {-webkit-animation: belt 1500ms 800ms ease infinite;}
