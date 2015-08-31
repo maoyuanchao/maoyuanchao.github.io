@@ -140,8 +140,4 @@ document.addEventListener('WeixinJSBridgeReady', function() {
 //    script.src= 'http://mat1.gtimg.com/www/js/newsapp/jsapi/news.js?_tsid=1';
 //    head.appendChild(script);
 //}
-<<<<<<< HEAD
 //androidQQNewsShare();/*  |xGv00|ca7bdc8e8f0261e1ef29ae09e3ac5c54 */
-=======
-//androidQQNewsShare();/*  |xGv00|ca7bdc8e8f0261e1ef29ae09e3ac5c54 */
->>>>>>> origin/master
