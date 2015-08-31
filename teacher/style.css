@@ -100,6 +100,7 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
 .active .animate.fadeIn div {opacity:0;-webkit-animation: fadeIn 800ms 2000ms ease forwards;}
 .active .animate.seal div {opacity:0;-webkit-animation: seal 800ms 2600ms ease forwards;}
 .animate.seal div {opacity:0;}
+.active .animate.door div {-webkit-animation: door 500ms 800ms linear forwards;}
 .swipeUp {
     position: absolute;
     left: 50%;
@@ -156,6 +157,23 @@ body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg"
     to {
         opacity: 1;
         -webkit-transform: translate3d(0,0,-50px)
+    }
+}
+@-webkit-keyframes door {
+    0% {
+        opacity: 1
+    }
+    25% {
+        background-image: url("img/door2.png")
+    }
+    50% {
+        background-image: url("img/door3.png")
+    }
+    75% {
+        background-image: url("img/door4.png")
+    }
+    100% {
+        background-image: url("img/door5.png")
     }
 }
 @-webkit-keyframes page5 {
