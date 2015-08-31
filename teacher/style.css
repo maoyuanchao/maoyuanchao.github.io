@@ -1,0 +1,164 @@
+body,div,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,iframe,input,textarea,select,label,article,aside,footer,header,menu,nav,section,time,audio,video {
+    margin: 0;
+    padding: 0
+}
+
+article,aside,footer,header,hgroup,nav,section,audio,canvas,video {
+    display: block
+}
+
+html{font-size: 62.5%;}
+body {
+    font-family: Helvetica,STHeiti,Droid Sans Fallback;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+textarea {
+    resize: none
+}
+
+iframe,img {
+    border: 0
+}
+
+ul,ol,ul li {
+    list-style: none
+}
+
+input,select,textarea {
+    outline: 0;
+    -webkit-user-modify: read-write-plaintext-only
+}
+
+input {
+    -webkit-appearance: none
+}
+
+a {
+    text-decoration: none
+}
+
+.cf:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.cf {
+    *zoom: 1
+}
+
+h1,h2,h3 {
+    font-weight: 100
+}
+
+i {
+    font-style: normal
+}
+
+body,html{width:100%;height:100%; position:relative;background: url("img/bg.jpg") no-repeat;background-size: cover;}
+#loading {width: 100%;height: 100%;position: relative;background: url("img/loading.png") no-repeat center;background-size: auto 100%;overflow: hidden;}
+.loading_bar {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    -webkit-transform:translate(-50%,0);
+    width: 62%;
+}
+#loading_bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #aaaaaa;
+    position: relative;
+    margin-top: 10px;
+}
+#loading_bar span{
+    display: block;position: absolute;top:0;left: 0;width: 0;height:100%;border-radius:10px;background: #434343;
+    z-index: 10;
+}
+#loading_process {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.global {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow:hidden;
+
+}
+.screen {position: absolute; left:0; top:0; width:100%; -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-transition: all 800ms ease-in-out;}
+.layout {position: relative;width: 100%;height: 100%;background: url("") no-repeat center;background-size: 100% 100%;-webkit-perspective: 400px}
+.layout .animate div {position: absolute; left:0; top:0; width:100%; height:100%; background: url("") no-repeat center; background-size: auto 100%; }
+.active .animate.push div {-webkit-animation: page5 800ms 800ms ease forwards;}
+.active .animate.slideInLeft div {opacity: 0;-webkit-animation: slideInLeft 800ms 800ms ease forwards;}
+.active .animate.slideInRight div {opacity: 0;-webkit-animation: slideInRight 800ms 1200ms ease forwards;}
+.active .animate.fadeIn div {opacity:0;-webkit-animation: fadeIn 800ms 2000ms ease forwards;}
+.active .animate.seal div {opacity:0;-webkit-animation: seal 800ms 2600ms ease forwards;}
+.animate.seal div {opacity:0;}
+.swipeUp {
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    -webkit-transform: translate(-50%,0);
+    height: 3%;
+    width: auto;
+    opacity: 0;
+    z-index: 3333;
+}
+.active .swipeUp {
+    -webkit-animation: swipeAnimate 1500ms 1200ms infinite;
+}
+
+
+@-webkit-keyframes swipeAnimate {
+    0% {opacity: 0;}
+    50% { opacity: 0.8;}
+    100% {opacity: 0;-webkit-transform: translate3d(-50%, -26px, 0px);}
+}
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+@-webkit-keyframes seal {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,0,0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,-50px)
+    }
+}
+@-webkit-keyframes page5 {
+    0% {opacity: 1}
+    100% {background-image: url("img/fx.png")}
+}
