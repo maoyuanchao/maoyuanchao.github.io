@@ -4,7 +4,7 @@
 
 var shareData = {
     title: "交换生",
-    desc: "我是交换生",
+ //   desc: "我是交换生",
     img: "http://mat1.gtimg.com/news/2015/zt/ygz/imgs/share.jpg",
     link: window.location.href
 };
