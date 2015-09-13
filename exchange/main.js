@@ -33,7 +33,6 @@ $(function() {
         "http://mat1.gtimg.com/news/2015/zt/letter/open/19_1.png",
         "http://mat1.gtimg.com/news/2015/zt/letter/open/20_2.png"
     ];
-
     var loadCanvas = {
         step: 0,
         animation_interval: 10,
@@ -53,6 +52,7 @@ $(function() {
                 var step = _this.step;
                 if (step <= n) {
                     $('.load_process span').text(step + "%");
+
                     if (step >= 100) {
                         // loading加载完毕 ！
                         setTimeout(function () {
@@ -157,19 +157,23 @@ var exchange={
         $(".opt1").on("tap",function(){
             for(i=1;i<8;i++){
                 $(".page"+i).css("background-image","url(img/china_"+i+".png)");
-            }
+            };
+            shareData.desc = "老师寄语：我罚你抄，不是我不原谅你，是科学不原谅你";
         });
         $(".opt2").on("tap",function(){
             for(i=1;i<8;i++){
                 $(".page"+i).css("background-image","url(img/uk_"+i+".png)");
-            }
+            };
+            shareData.desc = "老师：some people come to school can do everything,except reading  翻译：有些人来学校啥事都干，除了学习";
         });
         $(".opt3").on("tap",function(){
             for(i=1;i<8;i++){
                 $(".page"+i).css("background-image","url(img/jp_"+i+".png)");
-            }
+            };
+            shareData.desc = "老师：釣魚島は中国の  翻译：钓鱼岛是中国的";
         });
 
     }
 
 };
+

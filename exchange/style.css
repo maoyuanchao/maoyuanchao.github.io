@@ -59,7 +59,7 @@ i {
 
 
 
-body,html {width:100%;height:100%; position:relative}
+html,body {width:100%;height:100%; position:relative}
 .global {
     width: 100%;
     height: 100%;
@@ -85,7 +85,7 @@ body,html {width:100%;height:100%; position:relative}
 .opt3{position: absolute;left: 50%; -webkit-transform:translate(-50%,0);height: 9%;top:73%}
 
 .part1,.part2,.part3,.last{position:relative;width: 100%;height: 100%;overflow: hidden;-webkit-transition:all 600ms linear;background: url("") no-repeat center;background-size: auto 100%;}
-.up {position: absolute;left: 50%; -webkit-transform:translate(-50%,0);bottom: 6.5%;height: 6%;-webkit-animation: swipeAnimate 1500ms 900ms infinite;}
+.up {position: absolute;left: 50%; -webkit-transform:translate(-50%,0);bottom: 6.5%;height: 6%;-webkit-animation: swipeAnimate 1500ms 600ms infinite;}
 .part1 .button{position: absolute;bottom: 16%;height: 8%;left: 50%; -webkit-transform:translate(-50%,0);}
 .part2 .button{position: absolute;bottom: 7%;height: 8%;left: 50%; -webkit-transform:translate(-50%,0);}
 .page8{background: url("img/last.png") no-repeat center;background-size: auto 100%;}
