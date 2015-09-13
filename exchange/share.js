@@ -98,7 +98,7 @@ function onBridgeReady() {
             img_height: "120",
             img_url: shareData.img,
             link: shareData.link,   //desc这个属性要加上，虽然不会显示，但是不加暂时会导致无法转发至朋友圈，
-            desc: shareData.title,
+            desc: shareData.desc,
             title: shareData.desc
         };
         WeixinJSBridge.invoke("shareTimeline", data, function(res) {

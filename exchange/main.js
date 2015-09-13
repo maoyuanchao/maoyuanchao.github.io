@@ -159,18 +159,21 @@ var exchange={
                 $(".page"+i).css("background-image","url(img/china_"+i+".png)");
             };
             shareData.desc = "老师寄语：我罚你抄，不是我不原谅你，是科学不原谅你";
+            console.log(shareData.desc);
         });
         $(".opt2").on("tap",function(){
             for(i=1;i<8;i++){
                 $(".page"+i).css("background-image","url(img/uk_"+i+".png)");
             };
             shareData.desc = "老师：some people come to school can do everything,except reading  翻译：有些人来学校啥事都干，除了学习";
+            console.log(shareData.desc);
         });
         $(".opt3").on("tap",function(){
             for(i=1;i<8;i++){
                 $(".page"+i).css("background-image","url(img/jp_"+i+".png)");
             };
             shareData.desc = "老师：釣魚島は中国の  翻译：钓鱼岛是中国的";
+            console.log(shareData.desc);
         });
 
     }
