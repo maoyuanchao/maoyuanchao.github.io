@@ -4,16 +4,16 @@
 
 var shareData = {
     title: "交换生",
- //   desc: "我是交换生",
+    desc: "",
     img: "http://mat1.gtimg.com/news/2015/zt/ygz/imgs/share.jpg",
     link: window.location.href
 };
 //分享
 $(function(){
-    //var shareB=document.querySelector(".share_btn");//分享按钮，根据页面按钮类名自行修改
-    //shareB.addEventListener("click",function(){
-    //    shareQQNews();
-    //});
+    var shareB=document.querySelector(".tip");//分享按钮，根据页面按钮类名自行修改
+    shareB.addEventListener("click",function(){
+        shareQQNews();
+    });
 });
 
 
@@ -73,13 +73,13 @@ function shareQQNews() {
                 window.TencentNews.shareFromWebView(shareData.title, shareData.desc, shareData.img);
             }
             break;
-        case ua.weixin:
-            //var weixinLayout=document.querySelector(".weixin_layout");
-            //weixinLayout.style.display="block";
-            //weixinLayout.addEventListener("click",function(){
-            //    weixinLayout.style.display="none";
-            //});
-            break;
+        //case ua.weixin:
+        //    var weixinLayout=document.querySelector(".weixin_layout");
+        //    weixinLayout.style.display="block";
+        //    weixinLayout.addEventListener("click",function(){
+        //        weixinLayout.style.display="none";
+        //    });
+        //    break;
         default:
             window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=801378464&url="
             + shareData.link + "&title="
@@ -140,4 +140,4 @@ function androidQQNewsShare(){
     script.src= 'http://mat1.gtimg.com/www/js/newsapp/jsapi/news.js?_tsid=1';
     head.appendChild(script);
 }
-androidQQNewsShare();/*  |xGv00|ca7bdc8e8f0261e1ef29ae09e3ac5c54 */
+androidQQNewsShare();
