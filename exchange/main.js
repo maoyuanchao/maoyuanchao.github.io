@@ -106,7 +106,7 @@ $(function() {
 
 });
 
-var exchange={
+    var exchange={
     init:function(){
         var _this = this;
         _this._w = $(window).width();
@@ -175,6 +175,9 @@ var exchange={
             shareData.desc = "老师：釣魚島は中国の  翻译：钓鱼岛是中国的";
             console.log(shareData.desc);
         });
+        $(".again").on("tap",function(){
+            window.location.reload()
+        })
 
     }
 

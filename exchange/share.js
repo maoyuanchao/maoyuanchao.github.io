@@ -4,13 +4,13 @@
 
 var shareData = {
     title: "交换生",
-    desc: "",
+    //desc: "我是交换生",
     img: "http://mat1.gtimg.com/news/2015/zt/ygz/imgs/share.jpg",
     link: window.location.href
 };
 //分享
 $(function(){
-    var shareB=document.querySelector(".tip");//分享按钮，根据页面按钮类名自行修改
+    var shareB=document.querySelector(".share_btn");//分享按钮，根据页面按钮类名自行修改
     shareB.addEventListener("click",function(){
         shareQQNews();
     });
@@ -73,13 +73,13 @@ function shareQQNews() {
                 window.TencentNews.shareFromWebView(shareData.title, shareData.desc, shareData.img);
             }
             break;
-        //case ua.weixin:
-        //    var weixinLayout=document.querySelector(".weixin_layout");
-        //    weixinLayout.style.display="block";
-        //    weixinLayout.addEventListener("click",function(){
-        //        weixinLayout.style.display="none";
-        //    });
-        //    break;
+        case ua.weixin:
+            var weixinLayout=document.querySelector(".weixin_layout");
+            weixinLayout.style.display="block";
+            weixinLayout.addEventListener("click",function(){
+                weixinLayout.style.display="none";
+            });
+            break;
         default:
             window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=801378464&url="
             + shareData.link + "&title="
@@ -99,7 +99,7 @@ function onBridgeReady() {
             img_url: shareData.img,
             link: shareData.link,   //desc这个属性要加上，虽然不会显示，但是不加暂时会导致无法转发至朋友圈，
             desc: shareData.desc,
-            title: shareData.desc
+            title: shareData.title
         };
         WeixinJSBridge.invoke("shareTimeline", data, function(res) {
             WeixinJSBridge.log(res.err_msg)

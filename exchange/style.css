@@ -91,9 +91,10 @@ html,body {width:100%;height:100%; position:relative}
 .page8{background: url("img/last.png") no-repeat center;background-size: auto 100%;}
 .no{position: absolute;height: 7%;left: 50%; -webkit-transform:translate(-110%,0);top:56%;}
 .yes{position: absolute;height: 7%;right: 50%; -webkit-transform:translate(110%,0);top:56%;}
-.last{background-color: rgba(23,78,90,0.85)}
 .tip{position: absolute;top: 0;width: 100%;height: auto}
-
+.again{height: 8%;top:56%;position: absolute;left: 50%;-webkit-transform: translate(-50%,0)}
+.share_btn{height: 8%;top:68%;position: absolute;left: 50%;-webkit-transform: translate(-50%,0)}
+.weixin_layout{background-color: rgba(23,78,90,0.85);position:absolute;width: 100%;height: 100%;display: none}
 @-webkit-keyframes swipeAnimate {
     0% {opacity: 0;}
     50% { opacity: 0.8;}
