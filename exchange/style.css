@@ -92,6 +92,7 @@ html,body {width:100%;height:100%; position:relative}
 .no{position: absolute;height: 7%;left: 50%; -webkit-transform:translate(-110%,0);top:56%;}
 .yes{position: absolute;height: 7%;right: 50%; -webkit-transform:translate(110%,0);top:56%;}
 .tip{position: absolute;top: 0;width: 100%;height: auto}
+.arrow{position: absolute;top: 0;width: 100%;height: auto}
 .again{height: 8%;top:56%;position: absolute;left: 50%;-webkit-transform: translate(-50%,0)}
 .share_btn{height: 8%;top:68%;position: absolute;left: 50%;-webkit-transform: translate(-50%,0)}
 .weixin_layout{background-color: rgba(23,78,90,0.85);position:absolute;width: 100%;height: 100%;display: none}
@@ -100,7 +101,3 @@ html,body {width:100%;height:100%; position:relative}
     50% { opacity: 0.8;}
     100% {opacity: 0;-webkit-transform: translate3d(-50%, -26px, 0px);}
 }
-/*@-webkit-keyframes rotate {*/
-    /*from {-webkit-transform: rotate(0deg);}*/
-    /*to {-webkit-transform: rotate(360deg);}*/
-/*}*/
